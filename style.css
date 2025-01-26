@@ -1,15 +1,18 @@
+body {
+  background-color: #333652;
+}
+
 .main-container {
   height: 100vh;
   width: 100vw;
-  background-color: #333652;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .container {
-  width: 70%;
-  height: 85%;
+  width: 400px;
+  height: 700;
   background-color: #e9eaec;
   border-radius: 10px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.155);
@@ -107,12 +110,12 @@ a:active {
 
 
 /* Styles for smaller screens (tablets) */
-@media (min-width: 1250px) {
+@media (min-width: 760px) {
   .container{
     display: flex;
     flex-direction: row;
-    width: 50%;
-    height: 70%;
+    width: 740px;
+    height: 450px;
   }
   
   img{
