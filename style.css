@@ -1,0 +1,132 @@
+.main-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #333652;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 70%;
+  height: 85%;
+  background-color: #e9eaec;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.155);
+  overflow: hidden;
+}
+
+img {
+  width: 102%;
+  height: 40%;
+  object-fit: cover;
+}
+
+.log-container {
+  width: 100%;
+  padding: 1.5rem;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: "Lilita One", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #333652;
+  padding-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+input {
+  width: 100%;
+  border: 2px #90adc6 ridge;
+  border-radius: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 200;
+  color: #423352 ;
+}
+
+input:focus {
+  outline: none;
+  border: 2px #333652 ridge;
+}
+
+input::placeholder{
+  color: rgba(142, 133, 150, 0.584);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #3d0376;
+  font-size: 0.8rem;
+  padding-bottom: 1rem;
+}
+
+a:hover {
+    color: #fad02c;
+}
+
+a:active {
+    color: black;
+}
+
+#log-in-button {
+  background-color: #333652;
+  text-align: center;
+  border-radius: 5px;
+  padding: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  color: #e9eaec;
+  user-select: none;
+  -webkit-transition: background 0.4s;
+  transition: background 0.4s;
+
+}
+
+#log-in-button:hover {
+  background-color: #fad02c;
+  color: #333652;
+  cursor: pointer;
+}
+
+#log-in-button:active {
+  background-color: black;
+  color: white;
+}
+
+
+
+
+
+/* Styles for smaller screens (tablets) */
+@media (min-width: 1250px) {
+  .container{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    height: 70%;
+  }
+  
+  img{
+    width:40%;
+    height: 102%;
+    content: url(pattern2.jpg);
+    object-fit: cover;
+  }
+
+  .log-container {
+    height: 100%;
+    padding: 10%;
+    display: flexbox;
+    align-content: center;
+  }
+}
+
